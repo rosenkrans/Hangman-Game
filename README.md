@@ -3,18 +3,20 @@
 My Project 1 is a modified version of Hangman. 
 
 
-Technologies Used:
+## Technologies Used:
+Languages - HTML5, CSS, Javascript, jQuery
+Design - 
+Project Planning & User Stories - Trello
 
 
+## Features:
 
-Features:
 
-
-Wireframe:
+## Wireframe:
 ![Wireframe](Images/WireframeSmaller.jpg)
 
 
-Future Release Features:
+## Future Release Features:
 
 
 
