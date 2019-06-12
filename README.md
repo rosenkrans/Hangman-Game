@@ -11,7 +11,7 @@ Features:
 
 
 Wireframe:
-
+![Wireframe](Images/WireframeSmaller.jpg)
 
 
 Future Release Features:
