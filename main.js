@@ -2,37 +2,37 @@
 //     alert("Everything is ready, let's do this"); 
 // })  
 
+//hard code the word banana as a variable
+var word = "BANANA";
+// console.log(word)
 
-    //hard code the word banana as a variable
-    var word = "banana";
-    // console.log(word)
-    //convert word into an array so letters can be counted and referenced
-    var arraySplit = word.split("");
-    console.log(arraySplit) 
+//convert word into an array so letters can be counted and referenced
+var wordArray = word.split("");
+console.log(wordArray) 
 
-    //create same class but separate div for each letter in the word
-    // for(let i=0; i<arraySplit.length; i++){
-    //     var blank = document.createElement('div');
-    //     blank.id = 'each-letter' + [i];
-    //     blank.innerText = '_ ';
-    //     document.getElementById('letters').appendChild(blank); 
+for(let i=0; i<wordArray.length; i++){
+    var blank = document.createElement('div');
+    // blank.id = 'each-letter' + [i];
+    blank.className = 'letter';
+    blank.setAttribute('value', wordArray[i]);
+    document.getElementById('letters').appendChild(blank)
+    
+}
 
-    // }
 
-    for(let i=0; i<arraySplit.length; i++){
-        var blank = document.createElement('div');
-        // blank.id = 'each-letter' + [i];
-        blank.className = 'letter';
-        blank.setAttribute('value', arraySplit[i]);
-        document.getElementById('letters').appendChild(blank)
-        
-    }
+//Create alphabet string and convert to array
+var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" 
+var alphArray = alphabet.split("");
+console.log(alphArray) 
 
-    // document.getElementsByClassName('letter').setAttribute(arraySplit[i])
+for(let i=0; i<alphArray.length; i++){
+    var alphButtons = document.createElement('button');
+    alphButtons.className = 'alph-buttons';
+    alphButtons.setAttribute('value', alphArray[i]); 
+    document.getElementById('alphabetID').appendChild(alphButtons) 
+}
 
     
-    
-
 
 
 // Window load event used just in case window height is dependant upon content

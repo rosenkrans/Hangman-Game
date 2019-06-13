@@ -64,6 +64,19 @@ h1{
     border-bottom: 2px solid black;
 }
 
+#alphabetID{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.alph-buttons{
+    height: 50px;
+    width: 35px;
+}
 
 #footer {
     height: 100px;
