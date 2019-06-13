@@ -2,6 +2,8 @@
 
 My Project 1 is a modified version of Hangman. 
 
+## Links
+Game Link: not-hangman.netlify.com 
 
 ## Technologies Used:
 Languages - HTML5, CSS, Javascript, jQuery
