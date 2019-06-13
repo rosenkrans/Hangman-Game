@@ -3,13 +3,26 @@
 // })  
 
 
-var word = banana
-var arraySplit = str.split(" ");
-console.log(banana) 
+// function displayLetters(){ 
+    //hard code the word banana as a variable
+    var word = "banana";
+    // console.log(word)
+    //convert word into an array so letters can be counted and referenced
+    var arraySplit = word.split("");
+    console.log(arraySplit) 
 
+    //display array letters on screen
+    document.getElementById("letters").innerHTML = arraySplit;
+    //get number of letters in array to use for number of blanks to create
+    var wordLength = arraySplit.length;
+    console.log(wordLength) 
 
+    
+    // for(let i=0; i<wordLength; i++){
+    //     //create a separate div for each letter in the word
+    // }
 
-
+// }
 
 
 
