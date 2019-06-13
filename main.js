@@ -3,7 +3,6 @@
 // })  
 
 
-
     //hard code the word banana as a variable
     var word = "banana";
     // console.log(word)
@@ -11,25 +10,28 @@
     var arraySplit = word.split("");
     console.log(arraySplit) 
 
-    //display array letters on screen
-    // document.getElementById("letters").innerHTML = arraySplit;
-    //get number of letters in array to use for number of blanks to create
-    // var wordLength = arraySplit.length;
-    // console.log(wordLength) 
+    //create same class but separate div for each letter in the word
+    // for(let i=0; i<arraySplit.length; i++){
+    //     var blank = document.createElement('div');
+    //     blank.id = 'each-letter' + [i];
+    //     blank.innerText = '_ ';
+    //     document.getElementById('letters').appendChild(blank); 
 
-    //create a separate div for each letter in the word
+    // }
+
     for(let i=0; i<arraySplit.length; i++){
         var blank = document.createElement('div');
-        blank.id = 'each-letter' + [i];
-        blank.innerText = '_ ';
-        document.getElementById('letters').appendChild(blank); 
-
+        // blank.id = 'each-letter' + [i];
+        blank.className = 'letter';
+        blank.setAttribute('value', arraySplit[i]);
+        document.getElementById('letters').appendChild(blank)
+        
     }
 
+    // document.getElementsByClassName('letter').setAttribute(arraySplit[i])
+
     
     
-
-
 
 
 
