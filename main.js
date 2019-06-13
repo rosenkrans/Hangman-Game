@@ -20,7 +20,7 @@
     //create a separate div for each letter in the word
     for(let i=0; i<arraySplit.length; i++){
         var blank = document.createElement('div');
-        blank.className = "each-letter";
+        blank.id = 'each-letter' + [i];
         blank.innerText = '_ ';
         document.getElementById('letters').appendChild(blank); 
 
