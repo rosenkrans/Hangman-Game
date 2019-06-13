@@ -3,9 +3,9 @@
 // })  
 
 
-// var word = banana
-// var arraySplit = str.split(" ");
-// console.log(banana) 
+var word = banana
+var arraySplit = str.split(" ");
+console.log(banana) 
 
 
 

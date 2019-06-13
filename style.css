@@ -6,29 +6,39 @@ body {
 }
 
 .header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
     margin: 0 auto;
 }
 
 .btn-primary{
-    position: absolute;
+    /* position: absolute; */
     top: 10px;
     left: 0;
-    margin-left: 200px;
+    /* margin-left: 200px; */
+    width: 70px;
 }
 
+.right-buttons{
+    display: inline-block;
+    width: 70px;
+}
 .btn-warning{
-    position: absolute;
+    /* position: absolute; */
     top: 10px;
     right: 0;
-    margin-right: 200px;
+    /* margin-right: 200px; */
+    width: 70px;
 }
 
 .btn-info{
-    position: absolute;
+    /* position: absolute; */
     top: 70px;
     right: 0;
-    margin-right: 200px;
+    /* margin-right: 200px; */
+    width: 70px;
 }
 
 h1{
@@ -38,6 +48,12 @@ h1{
 .tries{
     text-align: center;
 }
+
+
+
+
+
+
 
 #footer {
     height: 100px;
