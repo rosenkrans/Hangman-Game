@@ -6,29 +6,39 @@ body {
 }
 
 .header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
     margin: 0 auto;
 }
 
 .btn-primary{
-    position: absolute;
+    /* position: absolute; */
     top: 10px;
     left: 0;
-    margin-left: 200px;
+    /* margin-left: 200px; */
+    width: 70px;
 }
 
+.right-buttons{
+    display: inline-block;
+    width: 70px;
+}
 .btn-warning{
-    position: absolute;
+    /* position: absolute; */
     top: 10px;
     right: 0;
-    margin-right: 200px;
+    /* margin-right: 200px; */
+    width: 70px;
 }
 
 .btn-info{
-    position: absolute;
+    /* position: absolute; */
     top: 70px;
     right: 0;
-    margin-right: 200px;
+    /* margin-right: 200px; */
+    width: 70px;
 }
 
 h1{
@@ -38,6 +48,64 @@ h1{
 .tries{
     text-align: center;
 }
+
+#letter-blanks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    margin-top: 50px;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+}
+#blank1{
+    display: block;
+    /* text-align: center; */
+    border-bottom: 2px solid black;
+    width: 10px;
+}
+#blank2{
+    display: block;
+    /* text-align: center; */
+    border-bottom: 2px solid black;
+    width: 10px;
+}
+#blank3{
+    display: block;
+    /* text-align: center; */
+    border-bottom: 2px solid black;
+    width: 10px;
+}
+#blank4{
+    display: block;
+    /* text-align: center; */
+    border-bottom: 2px solid black;
+    width: 10px;
+}
+#blank5{
+    display: block;
+    /* text-align: center; */
+    border-bottom: 2px solid black;
+    width: 10px;
+}
+#blank6{
+    display: block;
+    /* text-align: center; */
+    border-bottom: 2px solid black;
+    width: 10px;
+}
+#blank7{
+    display: block;
+    /* text-align: center; */
+    border-bottom: 2px solid black;
+    width: 10px;
+}
+
+
+
+
+
+
 
 #footer {
     height: 100px;
