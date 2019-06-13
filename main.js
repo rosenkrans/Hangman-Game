@@ -29,10 +29,11 @@ for(let i=0; i<alphArray.length; i++){
     var alphButtons = document.createElement('button');
     alphButtons.className = 'alph-buttons';
     alphButtons.setAttribute('value', alphArray[i]); 
+    alphButtons.innerText = alphButtons.getAttribute('value')
     document.getElementById('alphabetID').appendChild(alphButtons) 
 }
 
-    
+
 
 
 // Window load event used just in case window height is dependant upon content
