@@ -10,7 +10,7 @@
 
 
 
-// Window load event used just in case window height is dependant upon images
+// Window load event used just in case window height is dependant upon content
 $(window).bind("load", function() { 
        
     var footerHeight = 0,
