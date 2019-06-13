@@ -8,15 +8,26 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="header">
         <h1>Not Hangman</h1>
-
         <button type="button" class="btn btn-primary">START</button>
         <button type="button" class="btn btn-warning">EXIT</button>
-        
+        <button type="button" class="btn btn-info">Hint</button>
     </div>
 
+    
+
+    <div class="score-hint">
+        
+        <p class="category" style="text-align:center">Category: </p>
+        <p style="text-align:center">used in a sentence</p>
+    </div>
+
+    <div class="tries">
+        <span class="maxNum">5</span>/<span class="remaining">5</span>
+    </div>
 
     <div id="footer">
         <footer>Developer: Mark Rosenkrans</footer>
