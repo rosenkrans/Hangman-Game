@@ -32,35 +32,35 @@ for(let i=0; i<alphArray.length; i++){
         if(wordArray.includes(evt.target.dataset.letter)){
             evt.target.style.backgroundColor = 'green';
             //get all divs with data-letter that = alphabet dataset.letter
+            //populate text in the div to show on screen
+            let test = document.querySelectorAll('.letter')
+            test.forEach((banana) => {
+                if(banana.getAttribute('data-letter') === evt.target.dataset.letter){
+                    banana.innerHTML = banana.getAttribute('data-letter')
+                } 
+            })
         }
         
+        //Else if the letter is not in the word, change the button to red 
+        //and reduce the 5/5 t 4/5 and so on...
+        else{
+            evt.target.style.backgroundColor = 'red';
+            
+        }
+
     })
 
     document.getElementById('alphabetID').appendChild(alphButtons) 
     
 }
 
-// for(let i=0; i<alphArray.length; i++){
-//     alphButtons.addEventListener('click', function(evt){
-//         var alphCompare = document.querySelector('alph-buttons') 
-//         //not sure if I need this
-//         var wordCompare = document.querySelectorAll('letter')
-
-//         alphCompare.forEach('value'){
-//             if(//value of alph-buttons[i] === value of letter[i])
-//             {
-//                 evt.target.style.backgroundColor = 'green';
-//                 //disable alphabet button
-//                 //populate the letter in the div
-//             }
-//             //Else if the letter is not in the word, change the button to red 
-//             //and reduce the 5/5 t 4/5 and so on...
-//         }
-//     }   
-// }
+// if user clicks wrong letter too many times, they lose 
 
 
-
+// possible way to disable buttons
+// at end of listener set z index to -1 
+// might be able to add another div to the keyboard and have NO background 
+// style 'z-index', -1
 
 
 

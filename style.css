@@ -58,9 +58,15 @@ h1{
     padding-top: 30px;
 }
 
+#letters{
+    display: flex;
+    justify-content: center;
+}
 .letter{
+    display: inline-block;
     height: 50px;
     width: 35px;
+    margin: 10px;
     border-bottom: 2px solid black;
 }
 
