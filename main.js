@@ -22,6 +22,7 @@ for(let i=0; i<wordArray.length; i++){
 var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" 
 var alphArray = alphabet.split("");
 console.log(alphArray) 
+
 //create a button for each alphabet letter and add class and value and visible letter
 for(let i=0; i<alphArray.length; i++){
     var alphButtons = document.createElement('button');
@@ -33,10 +34,10 @@ for(let i=0; i<alphArray.length; i++){
             evt.target.style.backgroundColor = 'green';
             //get all divs with data-letter that = alphabet dataset.letter
             //populate text in the div to show on screen
-            let test = document.querySelectorAll('.letter')
-            test.forEach((banana) => {
-                if(banana.getAttribute('data-letter') === evt.target.dataset.letter){
-                    banana.innerHTML = banana.getAttribute('data-letter')
+            let allLetterClass = document.querySelectorAll('.letter')
+            allLetterClass.forEach((matching) => {
+                if(matching.getAttribute('data-letter') === evt.target.dataset.letter){
+                    matching.innerHTML = matching.getAttribute('data-letter')
                 } 
             })
         }
@@ -45,8 +46,16 @@ for(let i=0; i<alphArray.length; i++){
         //and reduce the 5/5 t 4/5 and so on...
         else{
             evt.target.style.backgroundColor = 'red';
-            
+            // var remainTries = $(".remain").text();
+            // parseInt(document.getElementById('remain').innerHTML)+1;    
+            //console.log(remainTries)
+            // remain = remain - 1;
+            var remainTries = parseInt($(`remain`).text())+1;
+            console.log(remainTries)
+            $(`remain`).text(remainTries);
         }
+
+        
 
     })
 
