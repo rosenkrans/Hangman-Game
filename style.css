@@ -49,7 +49,7 @@ h1{
     text-align: center;
 }
 
-#letters{
+#word{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -76,6 +76,7 @@ h1{
 .alph-buttons{
     height: 50px;
     width: 35px;
+    background-color: yellow;
 }
 
 #footer {
