@@ -51,7 +51,12 @@ for(let i=0; i<alphArray.length; i++){
             console.log(remainTries)
             $(`.remain`).text(remainTries);
             if(remainTries<=0){
-                alert('You are out of tries. The cake is a lie.')
+                // alert('You are out of tries. The cake is a lie.')
+                setTimeout(function(){
+                    $('.game-screen').addClass('hidden')
+                    $('.lose-screen').removeClass('hidden')
+                }, 500)
+                document.querySelector('.game-screen').classList.add('hidden')
             }
         }
         //disable the button after clicking
@@ -62,8 +67,15 @@ for(let i=0; i<alphArray.length; i++){
             if(test.getAttribute('data-letter')===test.innerHTML){
                 counter++;
                 if(counter === document.querySelectorAll('.letter').length){
-                    setTimeout(function() {alert('You win!')}, 200)
+                    // setTimeout(function() {alert('You win!')}, 200)
+                    setTimeout(function(){
+                        $('.game-screen').addClass('hidden')
+                        $('.win-screen').removeClass('hidden')
+                    }, 500)
+                    
+                    
                 }
+
             }
         })
         

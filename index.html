@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <div class='game-screen'>
     <div class="header">
         <button type="button" class="btn btn-primary">START</button>
         <h1>Not Hangman</h1>
@@ -41,10 +42,21 @@
 
 
 
+    </div>
+    
+    <div class='win-screen hidden'>
+        <p>YOU WIN!</p>
+    </div>
+
+    <div class='lose-screen hidden'>
+        <p>Too many incorrect guesses. You lose.</p>
+    </div>
+
+
     <div id="footer">
         <footer>Developer: Mark Rosenkrans</footer>
     </div>
-
+    
     <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
