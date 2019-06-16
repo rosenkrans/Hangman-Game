@@ -46,15 +46,26 @@ for(let i=0; i<alphArray.length; i++){
         //and reduce the 5/5 t 4/5 and so on...
         else{
             evt.target.style.backgroundColor = 'red';
-            // var remainTries = $(".remain").text();
-            // parseInt(document.getElementById('remain').innerHTML)+1;    
-            //console.log(remainTries)
-            // remain = remain - 1;
-            var remainTries = parseInt($(`remain`).text())+1;
+            
+            var remainTries = Number($(`.remain`).text())-1;
             console.log(remainTries)
-            $(`remain`).text(remainTries);
+            $(`.remain`).text(remainTries);
+            if(remainTries<=0){
+                alert('You are out of tries. The cake is a lie.')
+            }
         }
-
+        //disable the button after clicking
+        evt.target.style.zIndex = -1;
+        let counter = 0;
+        document.querySelectorAll('.letter').forEach((test) => {
+            
+            if(test.getAttribute('data-letter')===test.innerHTML){
+                counter++;
+                if(counter === document.querySelectorAll('.letter').length){
+                    setTimeout(function() {alert('You win!')}, 200)
+                }
+            }
+        })
         
 
     })
@@ -63,13 +74,8 @@ for(let i=0; i<alphArray.length; i++){
     
 }
 
-// if user clicks wrong letter too many times, they lose 
 
 
-// possible way to disable buttons
-// at end of listener set z index to -1 
-// might be able to add another div to the keyboard and have NO background 
-// style 'z-index', -1
 
 
 
