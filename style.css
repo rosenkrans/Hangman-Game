@@ -44,10 +44,14 @@ h1{
     padding-top: 30px;
 }
 
+/* .cake-div{
+    border: 5px solid black;
+} */
+
 #cake{
     /* position: relative; */
     /* align-self: center; */
-    width: 100px;
+    width: 200px;
     /* height: 100px; */
     opacity: 1;
     padding-top: 20px;
