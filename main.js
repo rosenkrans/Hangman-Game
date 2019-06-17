@@ -3,8 +3,10 @@
 // })  
 
 //hard code the word banana as a variable
-var word = "BANANA";
+// var word = "BANANA";
 // console.log(word)
+var words = ['BANANA', 'PEPPER', 'TOMATO', 'ONION', 'SQUASH', 'EGGPLANT', 'CABBAGE', 'LETTUCE', 'ARUGULA', 'RASPBERRIES', 'LIMES', 'BLACKBERRIES', 'STRAWBERRIES', 'PLUMS', 'COLLARDS', 'OKRA']
+var word = words[Math.floor(Math.random()*words.length)]
 
 //convert word into an array so letters can be counted and referenced
 var wordArray = word.split("");
