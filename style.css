@@ -93,6 +93,7 @@ h1{
     height: 50px;
     width: 35px;
     background-color: yellow;
+    border-radius: 7px;
 }
 
 .win-screen{
