@@ -21,7 +21,7 @@ My Project 1 is a modified version of Hangman.
 ![Wireframe](Images/WireframeSmaller.jpg)
 
 ## Works Cited:
-Sticky Footer Code:
+* Sticky Footer Code:
 https://css-tricks.com/snippets/jquery/jquery-sticky-footer/ 
 
 ## Future Release Features:
