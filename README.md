@@ -18,8 +18,13 @@ Project Planning & User Stories - Trello
 ## Wireframe:
 ![Wireframe](Images/WireframeSmaller.jpg)
 
+## Works Cited:
+Sticky Footer Code:
+https://css-tricks.com/snippets/jquery/jquery-sticky-footer/ 
 
 ## Future Release Features:
+Image that moves across the screen with each wrong letter guess
+Multiple word categories
 
 
 
