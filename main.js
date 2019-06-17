@@ -50,7 +50,7 @@ for(let i=0; i<alphArray.length; i++){
         //and reduce the 5/5 t 4/5 and so on...
         else{
             evt.target.style.backgroundColor = 'red';
-            
+            //update remaining tries each time a wrong letter is clicked
             var remainTries = Number($(`.remain`).text())-1;
             console.log(remainTries)
             $(`.remain`).text(remainTries);
