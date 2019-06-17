@@ -9,6 +9,9 @@ My Project 1 is a modified version of Hangman.
 ## Technologies Used:
 * Languages - HTML5, CSS, Javascript, jQuery
 * Project Planning & User Stories - Trello
+* Terminal - Bash
+* Code Editor - Visual Studio Code
+* Code Repository - GitHub 
 
 ## Features:
 * Shows number of tries user has left and decreases with each wrong guess
@@ -16,14 +19,16 @@ My Project 1 is a modified version of Hangman.
 * Changes correct alphabet keys to green and incorrect to red
 * Disables alphabet keys once clicked 
 * Clear button resets the game by refreshing the page
+* Cake image fades as incorrect buttons are clicked
+* Code for win and lose screens is hidden until user wins or loses
 
 ## Wireframe:
 ![Wireframe](Images/WireframeSmaller.jpg)
 
 ## Cited Code:
 * Sticky Footer Code: https://css-tricks.com/snippets/jquery/jquery-sticky-footer/ 
-* Dog image: https://www.pexel.com
-* Winner cup: https://pixabay.com  
+* Animal images: https://www.pexel.com
+* Dessert image: https://pixabay.com  
 
 ## Future Release Features:
 * Image that moves across the screen with each wrong letter guess
