@@ -96,24 +96,34 @@ h1{
 }
 
 .win-screen{
-    display: flex;
-    align-items: center;
+    flex-direction: column;
+    text-align: center;
     width: 100vw;
     height: 100vh;
     justify-content: center;
     background-color: yellow;
-    
+}
+
+.win-screen p{
+    padding-top: 50px;
+    font-weight: bold;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 .lose-screen{
-    display: flex;
-    align-items: center;
+    flex-direction: column;
+    text-align: center;
     width: 100vw;
     height: 100vh;
-    justify-content: space-around;
+    justify-content: center;
     background-color: red;
 }
 
+.lose-screen p{
+    padding-top: 50px;
+    font-weight: bold;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
 
 #footer {
     height: 100px;
