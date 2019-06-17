@@ -8,41 +8,49 @@ body {
 .header{
     display: flex;
     justify-content: space-around;
-    align-items: center;
     width: 100%;
     margin: 0 auto;
+    border: 5px solid pink;
 }
 
-.btn-primary{
-    /* position: absolute; */
+/* .btn-primary{
     top: 10px;
     left: 0;
-    /* margin-left: 200px; */
     width: 70px;
-}
+} */
 
-.right-buttons{
-    display: inline-block;
-    width: 70px;
+.empty-div{
+    width: 90px;
+    border: 5px solid black;
 }
+/* .right-buttons{
+    display: flex;
+    width: 70px;
+    /* align-items: center; */
+    /* text-align: center; */
+    
+/* } */ 
+
 .btn-warning{
-    /* position: absolute; */
+    /* display: inline-block;
     top: 10px;
     right: 0;
-    /* margin-right: 200px; */
-    width: 70px;
+    margin-left: 35vw; */
+    width: 90px;
+
 }
 
-.btn-info{
+/* .btn-info{ */
     /* position: absolute; */
-    top: 70px;
-    right: 0;
+    /* top: 70px; */
+    /* right: 0; */
     /* margin-right: 200px; */
-    width: 70px;
-}
+    /* width: 70px; */
+/* } */
 
 h1{
     text-align: center;
+    border: 5px solid red;
 }
 
 .tries{
@@ -104,6 +112,7 @@ h1{
     justify-content: center;
     background-color: red;
 }
+
 
 #footer {
     height: 100px;

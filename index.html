@@ -11,15 +11,26 @@
 
 <body>
     <div class='game-screen'>
+
+       
+
     <div class="header">
-        <button type="button" class="btn btn-primary">START</button>
+        <div class="empty-div">
+
+        </div> 
+        <!-- <button type="button" class="btn btn-primary">START</button> -->
         <h1>Not Hangman</h1>
-        <div class="right-buttons">
-            <button type="button" class="btn btn-warning">EXIT</button>
-            <button type="button" class="btn btn-info">Hint</button>
-        </div>
+        
+            <button type="button" class="btn btn-warning">CLEAR</button>
+            <!-- <button type="button" class="btn btn-info">Hint</button> -->
+        
     </div>
 
+    
+
+    <!-- </div> -->
+
+    
 
     <!-- <div class="category">
         
@@ -45,11 +56,20 @@
     </div>
     
     <div class='win-screen hidden'>
-        <p>YOU WIN!</p>
+        <p>You chose all the correct letters! YOU WIN!</p>
+        <div>
+            <p>Want to play again? Click the Clear button.</p>
+        </div>
+            <button type="button" class="btn btn-warning">CLEAR</button>
+        
     </div>
 
     <div class='lose-screen hidden'>
         <p>Too many incorrect guesses. You lose.</p>
+        <p>Want to play again? Click the Clear button.</p>
+        
+            <button type="button" class="btn btn-warning">CLEAR</button>
+        
     </div>
 
 

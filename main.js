@@ -23,6 +23,10 @@ var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 var alphArray = alphabet.split("");
 console.log(alphArray) 
 
+$('.btn-warning').on('click', function(){
+    window.location.reload()
+})
+
 //create a button for each alphabet letter and add class and value and visible letter
 for(let i=0; i<alphArray.length; i++){
     var alphButtons = document.createElement('button');
