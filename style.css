@@ -111,7 +111,7 @@ h1{
 }
 
 .win-screen p{
-    padding-top: 50px;
+    padding-top: 30px;
     font-weight: bold;
     font-family: "Comic Sans MS", cursive, sans-serif;
 }
@@ -126,7 +126,7 @@ h1{
 }
 
 .lose-screen p{
-    padding-top: 50px;
+    padding-top: 30px;
     font-weight: bold;
     font-family: "Comic Sans MS", cursive, sans-serif;
 }
