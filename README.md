@@ -20,13 +20,19 @@ My Project 1 is a modified version of Hangman.
 ## Wireframe:
 ![Wireframe](Images/WireframeSmaller.jpg)
 
-## Works Cited:
-* Sticky Footer Code:
-https://css-tricks.com/snippets/jquery/jquery-sticky-footer/ 
+## Cited Code:
+* Sticky Footer Code: https://css-tricks.com/snippets/jquery/jquery-sticky-footer/ 
+* Dog image: https://www.pexel.com
+* Winner cup: https://pixabay.com  
 
 ## Future Release Features:
 * Image that moves across the screen with each wrong letter guess
 * Multiple word categories
+*Sound
+*Media queries
+*Level 2 and keep score going – new categories
+*2-player version
+*Math option – people can choose word or math hangman
 
 
 
