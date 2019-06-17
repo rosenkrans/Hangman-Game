@@ -4,6 +4,12 @@ body {
     margin: auto;
 }
 
+.game-screen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .header{
     display: flex;
     justify-content: space-around;
@@ -39,9 +45,12 @@ h1{
 }
 
 #cake{
-    position: relative;
+    /* position: relative; */
+    /* align-self: center; */
     width: 100px;
-    height: 100px;
+    /* height: 100px; */
+    opacity: 1;
+    padding-top: 20px;
 }
 
 #word{
@@ -71,7 +80,8 @@ h1{
     align-items: center;
     width: 80%;
     margin: 0 auto;
-    padding-top: 60px;
+    padding-top: 30px;
+    padding-bottom: 20px;
     background: none;
 }
 

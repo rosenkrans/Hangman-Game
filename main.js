@@ -26,9 +26,6 @@ $('.btn-warning').on('click', function(){
     window.location.reload()
 })
 
-//cake animation
-
-
 //create a button for each alphabet letter and add class and value and visible letter
 for(let i=0; i<alphArray.length; i++){
     var alphButtons = document.createElement('button');
@@ -52,6 +49,9 @@ for(let i=0; i<alphArray.length; i++){
         //and reduce the 5/5 t 4/5 and so on...
         else{
             evt.target.style.backgroundColor = 'red';
+            //cake animation
+            
+
             //update remaining tries each time a wrong letter is clicked
             var remainTries = Number($(`.remain`).text())-1;
             console.log(remainTries)
@@ -64,6 +64,8 @@ for(let i=0; i<alphArray.length; i++){
                 }, 500)
                 document.querySelector('.game-screen').classList.add('hidden')
             }
+            var cakeAnimation = document.getElementById('cake')
+            cakeAnimation.style.opacity = remainTries/6;
         }
         //disable the button after clicking
         evt.target.style.zIndex = -1;
