@@ -28,11 +28,11 @@ My Project 1 is a modified version of Hangman.
 ## Future Release Features:
 * Image that moves across the screen with each wrong letter guess
 * Multiple word categories
-*Sound
-*Media queries
-*Level 2 and keep score going – new categories
-*2-player version
-*Math option – people can choose word or math hangman
+* Sound
+* Media queries
+* Level 2 and keep score going – new categories
+* 2-player version
+* Math option – people can choose word or math hangman
 
 
 
