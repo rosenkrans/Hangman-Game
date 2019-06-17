@@ -65,10 +65,11 @@ for(let i=0; i<alphArray.length; i++){
         }
         //disable the button after clicking
         evt.target.style.zIndex = -1;
+
         let counter = 0;
-        document.querySelectorAll('.letter').forEach((buttonDisable) => {
+        document.querySelectorAll('.letter').forEach((updateBlank) => {
             
-            if(buttonDisable.getAttribute('data-letter')===buttonDisable.innerHTML){
+            if(updateBlank.getAttribute('data-letter')===updateBlank.innerHTML){
                 counter++;
                 if(counter === document.querySelectorAll('.letter').length){
                     // setTimeout(function() {alert('You win!')}, 200)
