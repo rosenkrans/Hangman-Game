@@ -2,7 +2,6 @@ body {
     background-color: #6E94FF;
     font-family: "Comic Sans MS", cursive, sans-serif;
     margin: auto;
-    
 }
 
 .header{
@@ -13,42 +12,17 @@ body {
     /* border: 5px solid pink; */
 }
 
-/* .btn-primary{
-    top: 10px;
-    left: 0;
-    width: 70px;
-} */
-
 .empty-div{
     width: 90px;
     /* border: 5px solid black; */
 }
-/* .right-buttons{
-    display: flex;
-    width: 70px;
-    /* align-items: center; */
-    /* text-align: center; */
-    
-/* } */ 
 
 .btn-warning{
-    /* display: inline-block;
-    top: 10px;
-    right: 0;
-    margin-left: 35vw; */
     width: 90px;
     height: 50px;
     background-color: #FFCF54;
 
 }
-
-/* .btn-info{ */
-    /* position: absolute; */
-    /* top: 70px; */
-    /* right: 0; */
-    /* margin-right: 200px; */
-    /* width: 70px; */
-/* } */
 
 h1{
     text-align: center;
@@ -62,6 +36,12 @@ h1{
 
 .tries p{
     padding-top: 30px;
+}
+
+#cake{
+    position: relative;
+    width: 100px;
+    height: 100px;
 }
 
 #word{

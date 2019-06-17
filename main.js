@@ -2,7 +2,6 @@
 //     alert("Everything is ready, let's do this"); 
 // })  
 
-
 var words = ['BANANA', 'PEPPER', 'TOMATO', 'ONION', 'SQUASH', 'EGGPLANT', 'CABBAGE', 'LETTUCE', 'ARUGULA', 'RASPBERRIES', 'LIMES', 'BLACKBERRIES', 'STRAWBERRIES', 'PLUMS', 'COLLARDS', 'OKRA']
 var word = words[Math.floor(Math.random()*words.length)]
 
@@ -26,6 +25,9 @@ console.log(alphArray)
 $('.btn-warning').on('click', function(){
     window.location.reload()
 })
+
+//cake animation
+
 
 //create a button for each alphabet letter and add class and value and visible letter
 for(let i=0; i<alphArray.length; i++){
@@ -90,15 +92,6 @@ for(let i=0; i<alphArray.length; i++){
     document.getElementById('alphabetID').appendChild(alphButtons) 
     
 }
-
-
-
-
-
-
-
-
-
 
 
 
