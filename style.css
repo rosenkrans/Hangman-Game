@@ -15,25 +15,22 @@ body {
     justify-content: space-around;
     width: 100%;
     margin: 0 auto;
-    /* border: 5px solid pink; */
 }
 
 .empty-div{
     width: 90px;
-    /* border: 5px solid black; */
 }
 
 .btn-warning{
     width: 90px;
     height: 50px;
     background-color: #FFCF54;
-
 }
 
 h1{
     text-align: center;
     padding-top: 25px;
-    /* border: 5px solid red; */
+    font-weight: bold;
 }
 
 .tries{
@@ -44,15 +41,8 @@ h1{
     padding-top: 30px;
 }
 
-/* .cake-div{
-    border: 5px solid black;
-} */
-
 #cake{
-    /* position: relative; */
-    /* align-self: center; */
     width: 200px;
-    /* height: 100px; */
     opacity: 1;
     padding-top: 20px;
 }
@@ -70,6 +60,7 @@ h1{
     display: flex;
     justify-content: center;
 }
+
 .letter{
     display: inline-block;
     height: 50px;

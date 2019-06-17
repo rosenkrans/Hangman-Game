@@ -2,6 +2,7 @@
 //     alert("Everything is ready, let's do this"); 
 // })  
 
+//word bank set to randomly pick a word
 var words = ['BANANA', 'PEPPER', 'TOMATO', 'ONION', 'SQUASH', 'EGGPLANT', 'CABBAGE', 'LETTUCE', 'ARUGULA', 'RASPBERRIES', 'LIMES', 'BLACKBERRIES', 'STRAWBERRIES', 'PLUMS', 'COLLARDS', 'OKRA']
 var word = words[Math.floor(Math.random()*words.length)]
 
@@ -11,7 +12,6 @@ console.log(wordArray)
 //create a div for each letter in the word and add same class and dynamic value
 for(let i=0; i<wordArray.length; i++){
     var blank = document.createElement('div');
-    // blank.id = 'each-letter' + [i];
     blank.className = 'letter';
     blank.dataset.letter = wordArray[i];
     document.getElementById('letters').appendChild(blank)
@@ -22,6 +22,7 @@ var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 var alphArray = alphabet.split("");
 console.log(alphArray) 
 
+//refresh page when click Clear button
 $('.btn-warning').on('click', function(){
     window.location.reload()
 })
@@ -46,24 +47,22 @@ for(let i=0; i<alphArray.length; i++){
         }
         
         //Else if the letter is not in the word, change the button to red 
-        //and reduce the 5/5 t 4/5 and so on...
         else{
             evt.target.style.backgroundColor = 'red';
-            //cake animation
             
-
             //update remaining tries each time a wrong letter is clicked
             var remainTries = Number($(`.remain`).text())-1;
             console.log(remainTries)
             $(`.remain`).text(remainTries);
             if(remainTries<=0){
-                // alert('You are out of tries. The cake is a lie.')
+                //Unhide lose screen. The cake is a lie.
                 setTimeout(function(){
                     $('.game-screen').addClass('hidden')
                     $('.lose-screen').removeClass('hidden')
                 }, 500)
                 document.querySelector('.game-screen').classList.add('hidden')
             }
+            //make cake fade with each wrong click
             var cakeAnimation = document.getElementById('cake')
             cakeAnimation.style.opacity = remainTries/6;
         }
@@ -72,11 +71,11 @@ for(let i=0; i<alphArray.length; i++){
 
         let counter = 0;
         document.querySelectorAll('.letter').forEach((updateBlank) => {
-            
+            //if letters match, update counter    
             if(updateBlank.getAttribute('data-letter')===updateBlank.innerHTML){
                 counter++;
+                //if all blanks are filled, unhide win screen
                 if(counter === document.querySelectorAll('.letter').length){
-                    // setTimeout(function() {alert('You win!')}, 200)
                     setTimeout(function(){
                         $('.game-screen').addClass('hidden')
                         $('.win-screen').removeClass('hidden')
@@ -90,7 +89,7 @@ for(let i=0; i<alphArray.length; i++){
         
 
     })
-
+    //put alphabet letters in a row
     document.getElementById('alphabetID').appendChild(alphButtons) 
     
 }
@@ -99,6 +98,7 @@ for(let i=0; i<alphArray.length; i++){
 
 
 // Window load event used just in case window height is dependant upon content
+// Pushes footer to bottom of page
 $(window).bind("load", function() { 
        
     var footerHeight = 0,
