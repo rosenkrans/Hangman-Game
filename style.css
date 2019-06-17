@@ -1,6 +1,6 @@
 body {
-    background-color: #AA96FF;
-    font-family: 'Ruluko', sans-serif;
+    background-color: #6E94FF;
+    font-family: "Comic Sans MS", cursive, sans-serif;
     margin: auto;
     
 }
@@ -38,6 +38,7 @@ body {
     margin-left: 35vw; */
     width: 90px;
     height: 50px;
+    background-color: #FFCF54;
 
 }
 
@@ -51,11 +52,16 @@ body {
 
 h1{
     text-align: center;
+    padding-top: 25px;
     /* border: 5px solid red; */
 }
 
 .tries{
     text-align: center;
+}
+
+.tries p{
+    padding-top: 30px;
 }
 
 #word{
@@ -101,7 +107,7 @@ h1{
     width: 100vw;
     height: 100vh;
     justify-content: center;
-    background-color: yellow;
+    background-color: #75FF70;
 }
 
 .win-screen p{
